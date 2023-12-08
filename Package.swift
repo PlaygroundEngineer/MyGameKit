@@ -5,6 +5,10 @@ import PackageDescription
 
 let package = Package(
     name: "MyGameKit",
+    platforms: [
+           .iOS(.v16), // Specify the iOS version
+           // .tvOS(.v13) for tvOS
+       ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
